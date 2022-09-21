@@ -1,0 +1,26 @@
+{
+  "title" : "",
+  "slug" : "",
+  "coverImage" : "",
+  "content" : "",
+  "tags" : ["tag"],
+  "topicId" : "ObjectId(topic)",
+  "author" : "ObjectId(user)",
+  "ratings" : [//done
+    {
+      "userId" : "ObjectId(user)",
+      "username" : "",
+      "rating" : 3
+    }
+  ],
+  "averageRating" : 4.5,
+  "viewsCount" : 1002,
+  "comments" : [//done
+    {
+      "userId" : "ObjectId(user)",
+      "username" : "",
+      "comment" : "",
+      "replies" : ["ObjectId(comment)"]
+    }
+  ]
+}
