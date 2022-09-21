@@ -1,4 +1,7 @@
-export interface IBlog {
+import { Document } from "mongoose"
+
+export interface IBlog extends Document {
+    userId:string,
     title: string,
     slug: string,
     coverImage: string,
@@ -20,3 +23,4 @@ export interface IBlog {
     createdAt?: string,
     updatedAt?: string,
 }
+

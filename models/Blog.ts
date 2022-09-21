@@ -1,6 +1,4 @@
 import mongoose, { Schema } from "mongoose";
-import bcryptjs from "bcryptjs";
-
 import logging from "../config/logging";
 import { IBlog } from "../interfaces/IBlog";
 
@@ -9,10 +7,10 @@ const BlogSchema: Schema = new Schema({
         type: String,
         required: true,
     },
-    name: {
-        type: String,
-        required: true,
-    },
+    // name: {//author
+    //     type: String,
+    //     required: true,
+    // },
     title: {
         type: String,
         required: true,
@@ -64,7 +62,7 @@ const BlogSchema: Schema = new Schema({
 
 
 BlogSchema.post<IBlog>("save", function () {
-    logging.info("Rating", "New user rated just saved: ");
+    logging.info("Blog", "New blog just saved: ");
 });
 
 export default mongoose.model<IBlog>("Blog", BlogSchema);

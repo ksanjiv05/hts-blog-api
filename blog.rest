@@ -1,0 +1,13 @@
+POST http://localhost:4000/api/blog/blog HTTP/1.1
+content-type: application/json
+
+{
+    "userId":"sanjiv@gmail.com",
+    "author": "sanjiv",
+    "title": "blog one",
+    "slug": "slug one",
+    "coverImage" : "/imag1.jpg",
+    "content": "this is first blog",
+    "topicId": "test topic",
+    "tags" : ["poltical", "socail", "tag2","tag3","tag4"]
+}
