@@ -43,10 +43,6 @@ const BlogSchema: Schema = new Schema({
     ],
     averageRating: Number,
     viewsCount: Number,
-    comments: [{
-        commentId: String
-    }
-    ],
     createdAt: {
         type: Date,
         default: Date.now

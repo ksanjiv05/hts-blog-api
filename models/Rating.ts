@@ -18,6 +18,10 @@ const RatingSchema: Schema = new Schema({
         type: Number,
         required: true,
     },
+    toUserId:{
+        type: Number,
+        required: true,
+    },
     createdAt: {
         type: Date,
         default: Date.now
