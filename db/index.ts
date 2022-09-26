@@ -1,13 +1,13 @@
 import { DB_NAME, DB_URL } from "../config/config";
 const Mongoose = require("mongoose");
-
+console.log("mongo url",DB_URL)
 const connection = Mongoose.connect(
-  "mongodb://" +
-    DB_URL +
-    "/" +
-    DB_NAME +
-    "?retryWrites=true",
-  // DB_URL,
+  // "mongodb://" +
+  //   DB_URL +
+  //   "/" +
+  //   DB_NAME +
+  //   "?retryWrites=true",
+  DB_URL,
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
