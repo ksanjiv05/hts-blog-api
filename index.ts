@@ -8,7 +8,7 @@ dotenv.config();
 
 globalThis.__dirname = __dirname;
 const app: Express = express();
-const port = 4000;
+const port = 443;
 app.use(cors());
 app.use(express.json({limit:"100mb"}))
 app.use(express.urlencoded({extended:true}))
